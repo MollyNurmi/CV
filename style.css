@@ -1,0 +1,24 @@
+header {
+    background-color: dimgrey;
+    color: ivory;
+    height: 100px;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+main {
+    margin-top: 0%;
+    background-color: rgba(236, 235, 230, 0.972);
+}
+
+body {
+background-color: rgb(210, 209, 203);
+font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+height: 100px;
+background-color: rgb(255, 255, 255);
+padding: 10px;
+}
