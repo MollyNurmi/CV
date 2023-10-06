@@ -1,24 +1,123 @@
 header {
-    background-color: dimgrey;
-    color: ivory;
-    height: 100px;
+    background-color: rgba(9, 9, 9, 0.889);
+    height: 60px;
     padding: 10px;
     text-align: left;
+    font-size: 30px;
+    color: ivory;
     
 }
 
+header a {
+    color: aliceblue;
+}
+
 main {
-    margin-top: 0%;
-    background-color: rgba(236, 235, 230, 0.972);
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.89);
+    margin-bottom: auto;
+}
+
+* {
+box-sizing: border-box;
+}
+html, body, div, img {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center;
+}
+
+.item {
+margin: 80px;
 }
 
 body {
-background-color: rgb(210, 209, 203);
+background-color: rgb(246, 245, 239);
 font-family: 'Times New Roman', Times, serif;
+line-height: 1;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.89);
+
 }
 
+
+.slider-frame {
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+@-webkit-keyframes slide_animation {
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left: 1200px;}
+    30% {left:1200px;}
+    40% {left:2400px;}
+    50% {left:2400px;}
+    60% {left:1200px;}
+    70% {left:1200px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+
+.slide-images {
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container {
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.officiella {
+font-size: 26px;
+margin: auto;
+width: 500px;
+padding: 50px;
+text-align: center;
+}
+
+
 footer {
-height: 100px;
-background-color: rgb(255, 255, 255);
+min-height: 100px;
+background-color: gray;
 padding: 10px;
+}
+
+.linkedin {
+    font-size: large;
+    margin: auto;
+    padding: 30px;
+
 }
